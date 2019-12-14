@@ -7,20 +7,25 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.OkhttpActivity">
 
     <Button
-    android:id="@+id/b1"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="okhttp网络请求"
-    android:layout_marginTop="20dp" />
-
-    <Button
-        android:id="@+id/b2"
+        android:id="@+id/get"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="轮播图"
-        android:layout_marginTop="20dp" />
+        android:text="get请求"/>
+
+    <Button
+        android:id="@+id/post"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="post请求"/>
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:hint="请求结果"/>
 
 </LinearLayout>
