@@ -17,6 +17,13 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
+    defaultConfig {
+        ndk {
+            //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+        }
+    }
 }
 
 dependencies {
@@ -26,4 +33,23 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //第三方框架，用法请自行搜索。如果能使用其他方法实现相同的功能，也是允许的。
+    implementation 'com.squareup.okhttp3:okhttp:4.2.2'   //http网络请求框架
+    implementation 'com.youth.banner:banner:1.4.10'      //轮播图框架
+
+    implementation 'com.github.bumptech.glide:glide:4.10.0'    //图片加载框架
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'  //图片加载框架
+
+    //高德地图3D地图so及jar
+    implementation 'com.amap.api:3dmap:latest.integration'
+    //高德地图定位功能
+    implementation 'com.amap.api:location:latest.integration'
+    //高德地图搜索功能
+    implementation 'com.amap.api:search:latest.integration'
+    //高德地图导航功能
+//    implementation 'com.amap.api:navi-3dmap:latest.integration'
+
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //上拉更多，下拉刷新
+    implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'  //没有使用特殊Header，可以不加这行
 }

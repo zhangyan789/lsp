@@ -1,8 +1,10 @@
-package com.wulianwang.lsp;
+package com.wulianwang.lsp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.wulianwang.lsp.R;
 
 public class MainActivity extends AppCompatActivity {
 
