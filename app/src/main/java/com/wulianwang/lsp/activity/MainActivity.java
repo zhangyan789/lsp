@@ -25,6 +25,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         b1.setOnClickListener(this);
         Button b2 = findViewById(R.id.b2);
         b2.setOnClickListener(this);
+        Button b3 = findViewById(R.id.b3);
+        b3.setOnClickListener(this);
+        Button b4 = findViewById(R.id.b4);
+        b4.setOnClickListener(this);
     }
 
     @Override
@@ -35,6 +39,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
         if(view.getId() == R.id.b2){
             Intent intent = new Intent(this, BannerActivity.class);
+            startActivity(intent);
+        }
+        if(view.getId() == R.id.b3){
+            Intent intent = new Intent(this, RefreshAndLoadActivity.class);
+            startActivity(intent);
+        }
+        if(view.getId() == R.id.b4){
+            Intent intent = new Intent(this, FrameActivity.class);
             startActivity(intent);
         }
     }

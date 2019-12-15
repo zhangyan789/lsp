@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 允许程序读写手机状态和身份 -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -31,9 +32,15 @@
         </activity>
         <activity
             android:name=".activity.OkhttpActivity"
-            android:label="网络请求okhttp"></activity>
-        <activity android:name=".BannerActivity"
-            android:label="轮播图banner"></activity>
+            android:label="网络请求okhttp" />
+        <activity
+            android:name=".BannerActivity"
+            android:label="轮播图Banner" />
+        <activity
+            android:name=".activity.RefreshAndLoadActivity"
+            android:label="刷新/加载" />
+        <activity android:name=".activity.FrameActivity"
+            android:label="碎片fragment"></activity>
     </application>
 
 </manifest>
