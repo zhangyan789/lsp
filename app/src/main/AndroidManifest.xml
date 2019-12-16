@@ -34,7 +34,7 @@
             android:name=".activity.OkhttpActivity"
             android:label="网络请求okhttp" />
         <activity
-            android:name=".BannerActivity"
+            android:name=".activity.BannerActivity"
             android:label="轮播图Banner" />
         <activity
             android:name=".activity.RefreshAndLoadActivity"
