@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.wulianwang.lsp.Main2Activity;
 import com.wulianwang.lsp.Main3Activity;
 import com.wulianwang.lsp.Main4Activity;
 import com.wulianwang.lsp.Main5Activity;
@@ -59,7 +58,7 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Main2Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+                intent.setClass(MainActivity.this, ForgetPasswordActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
                 startActivity(intent);
             }
         });

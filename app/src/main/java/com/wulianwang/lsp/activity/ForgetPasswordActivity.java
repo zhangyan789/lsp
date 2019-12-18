@@ -1,6 +1,5 @@
-package com.wulianwang.lsp;
+package com.wulianwang.lsp.activity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,10 +9,12 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import java.net.PasswordAuthentication;
+import com.wulianwang.lsp.R;
 
-
-public class Main2Activity extends AppCompatActivity {
+/**
+ * 张栋凯 曹小康 1-3
+ */
+public class ForgetPasswordActivity extends AppCompatActivity {
 
     private ImageButton mybtn1;private Button mybtn2;
     private  EditText editText1;private  EditText editText2;
@@ -21,7 +22,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_forget_password);
         editText1 = (EditText) findViewById(R.id.et_password);
         editText2 = (EditText) findViewById(R.id.et_password2);
         mybtn1 = (ImageButton) findViewById(R.id.bt1);
