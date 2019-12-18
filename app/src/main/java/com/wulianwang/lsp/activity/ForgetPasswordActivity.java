@@ -41,6 +41,8 @@ public class ForgetPasswordActivity extends AppCompatActivity {
                }else if (password.equals("")  != password2.equals("")){
                    Toast.makeText(getApplicationContext(),"密码不一致，请重新输入",Toast.LENGTH_SHORT).show();
                 }
+
+               finish();
             }
         });
 

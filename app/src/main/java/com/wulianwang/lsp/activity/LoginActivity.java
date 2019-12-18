@@ -22,21 +22,30 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_login);
         Button btn = (Button)this.findViewById(R.id.button3);
         TextView tv=(TextView)this.findViewById(R.id.textView22);
+        TextView tv2=(TextView)this.findViewById(R.id.textView23);
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent();
+            //    Intent intent=new Intent();
                 finish();
             }
         });
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent1=new Intent();
-                finish();
+                Intent intent=new Intent(LoginActivity.this, ForgetPasswordActivity.class);
+                startActivity(intent);
+
+            }
+        });
+        tv2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(LoginActivity.this, RegisterActivity.class);
+                startActivity(intent);
             }
         });
     }

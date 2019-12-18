@@ -18,7 +18,7 @@ import com.wulianwang.lsp.R;
  * 陈关奇、侯璐鑫 1.4
  */
 public class RegisterActivity extends AppCompatActivity {
-    private Button bt;
+    private Button bt1, bt2, bt3, bt4;
     private Button btn = null;
 
     private CheckBox checkBox = null;
@@ -30,64 +30,50 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-        bt = (Button) findViewById(R.id.button1);//id后面为上方button的id
+        bt1 = (Button) findViewById(R.id.button1);//id后面为上方button的id
 
-        bt.setOnClickListener(new View.OnClickListener() {
+        bt1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-             //   intent.setClass(MainActivity.this, Main3Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-            //    startActivity(intent);
-
-
+                finish();
             }
         });
 
 
 
-        bt = (Button) findViewById(R.id.button);//id后面为上方button的id
-        bt.setOnClickListener(new View.OnClickListener() {
+        bt2 = (Button) findViewById(R.id.button);
+        bt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-       //         intent.setClass(MainActivity.this, ForgetPasswordActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-      //          startActivity(intent);
+
+                finish();
             }
         });
 
-        bt = (Button) findViewById(R.id.button4);//id后面为上方button的id
-        bt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-        //        Intent intent = new Intent();
-        //        intent.setClass(MainActivity.this, Main4Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-       //         startActivity(intent);
-            }
-        });
-        bt = (Button) findViewById(R.id.button9);//id后面为上方button的id
-        bt.setOnClickListener(new View.OnClickListener() {
+        bt3 = (Button) findViewById(R.id.button4);
+        bt3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-        //        intent.setClass(MainActivity.this, Main5Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-        //        startActivity(intent);
+                intent.setClass(RegisterActivity.this, PravcyActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+                startActivity(intent);
             }
         });
-
-        bt = (Button) findViewById(R.id.button2);//id后面为上方button的id
-        bt.setOnClickListener(new View.OnClickListener() {
+        bt4 = (Button) findViewById(R.id.button9);//id后面为上方button的id
+        bt4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-        //        intent.setClass(MainActivity.this, Main6Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-       //         startActivity(intent);
+                intent.setClass(RegisterActivity.this, ServiceActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+                startActivity(intent);
             }
         });
 
-        this.btn = (Button) super.findViewById(R.id.button);
+
         this.checkBox = (CheckBox) super.findViewById(R.id.checkBox);
 
-        this.btn.setClickable(false);
 
 // 设置CheckBox默认不选中
 
@@ -125,7 +111,7 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
-        bt.setOnClickListener(new View.OnClickListener() {	//给注册按钮设置监听
+        bt2.setOnClickListener(new View.OnClickListener() {	//给注册按钮设置监听
 
 
             EditText editText=(EditText)findViewById(R.id.editText3);
