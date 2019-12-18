@@ -24,7 +24,7 @@ import java.io.IOException;
 import java.io.FileNotFoundException;
 
 
-public class activity_gerenren_zheng extends AppCompatActivity {
+public class GerenrenZheng extends AppCompatActivity {
     static final int TAKE_PHOTO=1;
     ImageView  picture;
     Uri imageUri1,imageUri2,imageUri3;
@@ -65,7 +65,7 @@ public class activity_gerenren_zheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri1 = FileProvider.getUriForFile(activity_gerenren_zheng.this,
+                {    imageUri1 = FileProvider.getUriForFile(GerenrenZheng.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{
@@ -95,7 +95,7 @@ public class activity_gerenren_zheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri2= FileProvider.getUriForFile(activity_gerenren_zheng.this,
+                {    imageUri2= FileProvider.getUriForFile(GerenrenZheng.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{
@@ -124,7 +124,7 @@ public class activity_gerenren_zheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri3 = FileProvider.getUriForFile(activity_gerenren_zheng.this,
+                {    imageUri3 = FileProvider.getUriForFile(GerenrenZheng.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{
