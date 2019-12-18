@@ -17,6 +17,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
+import com.wulianwang.lsp.bean.MyList;
 
 import java.util.List;
 

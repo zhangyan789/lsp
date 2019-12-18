@@ -7,12 +7,11 @@ package com.wulianwang.lsp.activity;
         import android.os.Bundle;
         import android.view.View;
         import android.widget.AdapterView;
-        import android.widget.GridLayout;
         import android.widget.ListView;
         import android.widget.Toast;
 
         import com.wulianwang.lsp.R;
-        import com.wulianwang.lsp.adapter.MyList;
+        import com.wulianwang.lsp.bean.MyList;
         import com.wulianwang.lsp.adapter.MyListAdapter;
 
         import java.util.ArrayList;
@@ -57,6 +56,9 @@ public class CompanyServiceActivity extends AppCompatActivity {
           //      intent.putExtra("stringname","这是第一个页面的内容");
           //      intent.setClass(ListMainActivity.this,NextActivity.class);
           //      ListMainActivity.this.startActivity(intent);
+
+                Intent intent = new Intent(CompanyServiceActivity.this, CompanyServiceDetailActivity.class);
+                startActivity(intent);
             }
         });
     }

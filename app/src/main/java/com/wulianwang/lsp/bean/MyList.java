@@ -1,4 +1,4 @@
-package com.wulianwang.lsp.adapter;
+package com.wulianwang.lsp.bean;
 
 
 /**

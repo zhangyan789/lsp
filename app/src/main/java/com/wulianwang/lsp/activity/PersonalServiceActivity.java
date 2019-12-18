@@ -13,6 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.wulianwang.lsp.R;
 import com.wulianwang.lsp.bean.Itemview;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ import java.util.List;
  */
 public class PersonalServiceActivity extends AppCompatActivity {
     private ListView list_animal;
-    private List<Itemview> itemalls;
+    private List<Itemview> itemalls = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +36,7 @@ public class PersonalServiceActivity extends AppCompatActivity {
         list_animal = findViewById(R.id.listview);
 
         ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, itemalls);
+        //ItemAdapter adapter = new ItemAdapter(this, android.R.layout.simple_list_item_1, itemalls);
 
         list_animal.setAdapter(adapter);
 
