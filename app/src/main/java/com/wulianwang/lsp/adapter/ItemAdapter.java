@@ -1,10 +1,13 @@
-package com.wulianwang.lsp.activity;
+package com.wulianwang.lsp.adapter;
 
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 
-public class itemAdapter extends BaseAdapter {
+/**
+ * 李鑫鑫 李永祥 3.2
+ */
+public class ItemAdapter extends BaseAdapter {
 
 
     @Override

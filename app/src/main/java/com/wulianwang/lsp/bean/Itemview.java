@@ -1,5 +1,8 @@
-package com.wulianwang.lsp.activity;
+package com.wulianwang.lsp.bean;
 
+/**
+ * 李鑫鑫 李永祥 3.2
+ */
 public class Itemview {
     private  String time;
     private  String itmename;
