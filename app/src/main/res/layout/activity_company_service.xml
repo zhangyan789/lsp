@@ -38,8 +38,9 @@
                 android:layout_weight="1"
                 android:layout_gravity="center_vertical"
                 android:background="#99FFCC"
-                android:src="@drawable/arrow_left"
-                android:scaleType="fitXY"></ImageButton>
+
+                android:scaleType="fitXY"
+            />    android:src="@drawable/arrow_left"/>
             <TextView
                 android:id="@+id/textView2"
                 android:layout_width="wrap_content"

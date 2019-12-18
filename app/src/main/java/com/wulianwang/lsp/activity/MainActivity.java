@@ -5,13 +5,14 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 
 import com.wulianwang.lsp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ImageView im1, im2, im3, im4;
+    private Button im1, im2, im3, im4;
     boolean isLogin = false;
 
     @Override

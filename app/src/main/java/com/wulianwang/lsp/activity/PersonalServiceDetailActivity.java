@@ -24,7 +24,7 @@ public class PersonalServiceDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_personalService_detail);
+        setContentView(R.layout.activity_personal_service_detail);
         myTextView = (TextView)this.findViewById(R.id.textView2);
         et1 = (EditText)this.findViewById(R.id.editText);
         bt1=(Button) this.findViewById(R.id.button2);
