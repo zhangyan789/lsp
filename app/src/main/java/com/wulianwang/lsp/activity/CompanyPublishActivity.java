@@ -58,8 +58,8 @@ public class CompanyPublishActivity extends AppCompatActivity {
         mBt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-          //      Intent intent= new Intent(CompanyPublishActivity.this,Test2.class);
-          //      startActivity(intent);
+                Intent intent= new Intent(CompanyPublishActivity.this,MapSearchActivity.class);
+                startActivity(intent);
             }
         });
 

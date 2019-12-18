@@ -97,7 +97,7 @@
         </LinearLayout>
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/editText1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="99dp"
@@ -108,7 +108,7 @@
             tools:layout_editor_absoluteY="319dp" />
 
         <EditText
-            android:id="@+id/editText12"
+            android:id="@+id/editText2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="99dp"

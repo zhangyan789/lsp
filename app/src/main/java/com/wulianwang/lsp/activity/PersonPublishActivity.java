@@ -40,9 +40,8 @@ public class PersonPublishActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // activity页面跳转
-          //      Intent intent= new Intent(PersonPublishActivity.this,Main3Activity.class);
-
-          //      startActivity(intent);
+                Intent intent= new Intent(PersonPublishActivity.this,MapSearchActivity.class);
+                startActivity(intent);
             }
         });
         BtnTextView =findViewById(R.id.button01);

@@ -45,8 +45,9 @@
             android:id="@+id/imageButton2"
             android:layout_width="fill_parent"
             android:layout_height="match_parent"
-            android:background="@drawable/riqi"
-            android:layout_weight="7"/>
+
+            android:layout_weight="7"
+        />    android:background="@drawable/riqi"/>
     </LinearLayout>
 
     <LinearLayout

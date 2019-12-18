@@ -35,6 +35,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.AppraiseActivity" />
+        <activity android:name=".activity.CompanyCertificateActivity" />
+        <activity android:name=".activity.CompanyPublishActivity" />
+        <activity android:name=".activity.CompanyServiceActivity" />
+        <activity android:name=".activity.CompanyServiceDetailActivity" />
+        <activity android:name=".activity.ElectricityCertificationActivity" />
+        <activity android:name=".activity.ForgetPasswordActivity" />
+        <activity android:name=".activity.HandlingDetailActivity" />
+        <activity android:name=".activity.HistoryWorkActivity" />
+        <activity android:name=".activity.LoginActivity" />
+        <activity android:name=".activity.MapLocationActivity" />
+        <activity android:name=".activity.MapSearchActivity" />
+        <activity android:name=".activity.MyReleaseActivity" />
+        <activity android:name=".activity.MyWorkListActivity" />
+        <activity android:name=".activity.NameAuthActivity" />
+        <activity android:name=".activity.PeopleListActivity" />
+        <activity android:name=".activity.PersonalServiceActivity" />
+        <activity android:name=".activity.PersonalServiceDetailActivity" />
+        <activity android:name=".activity.PersonDetailActivity" />
+        <activity android:name=".activity.PersonPublishActivity" />
+        <activity android:name=".activity.PravcyActivity" />
+        <activity android:name=".activity.PublishActivity" />
+        <activity android:name=".activity.RegisterActivity" />
+        <activity android:name=".activity.ServiceActivity" />
+        <activity android:name=".activity.TaskDetailActivity" />
 
         <provider
             android:name="androidx.core.content.FileProvider"

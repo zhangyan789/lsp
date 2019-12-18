@@ -1,4 +1,4 @@
-package com.wulianwang.lsp.activity;
+package com.wulianwang.lsp.fragment;
 
 
 import android.content.Context;
@@ -18,6 +18,7 @@ import android.widget.ListView;
 import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
+import com.wulianwang.lsp.activity.MainActivity;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -95,7 +96,7 @@ public class OrderCompleteFragment extends Fragment {
                 @Override
                 public void onClick(View view) {
                     //点击后执行的事件
-                    Intent intent = new Intent(getActivity(),MainActivity.class);
+                    Intent intent = new Intent(getActivity(), MainActivity.class);
                     startActivity(intent);
 
                 }

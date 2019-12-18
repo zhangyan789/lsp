@@ -2,6 +2,7 @@ package com.wulianwang.lsp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -23,35 +24,40 @@ public class MyInfoActivity extends AppCompatActivity {
         l1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MyInfoActivity.this, NameAuthActivity.class);
+                startActivity(intent);
             }
         });
-        l2 = findViewById(R.id.nameAuth);
+        l2 = findViewById(R.id.elecAuth);
+        l2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MyInfoActivity.this, ElectricityCertificationActivity.class);
+                startActivity(intent);
+            }
+        });
+        l3 = findViewById(R.id.publish);
         l3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MyInfoActivity.this, PublishActivity.class);
+                startActivity(intent);
             }
         });
-        l3 = findViewById(R.id.nameAuth);
-        l3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-        l4 = findViewById(R.id.nameAuth);
+        l4 = findViewById(R.id.zhiyerenzheng);
         l4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MyInfoActivity.this, ProfessionalCertificationActivity.class);
+                startActivity(intent);
             }
         });
-        l5 = findViewById(R.id.nameAuth);
+        l5 = findViewById(R.id.myorder);
         l5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MyInfoActivity.this, MyWorkListActivity.class);
+                startActivity(intent);
             }
         });
     }

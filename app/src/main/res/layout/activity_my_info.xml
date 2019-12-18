@@ -8,8 +8,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ECEBF1"
-    android:orientation="vertical"
-    tools:context=".activity.">
+    android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -22,7 +21,7 @@
             android:id="@+id/back"
             android:layout_width="14dp"
             android:layout_height="match_parent"
-            android:src="@drawable/z" />
+         />   android:src="@drawable/z" />
 
         <TextView
             android:layout_width="match_parent"
@@ -77,7 +76,7 @@
 
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/y" />
+        />    android:src="@drawable/y" />
 
 
     </LinearLayout>
@@ -132,7 +131,7 @@
 
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/y" />
+        />    android:src="@drawable/y" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/zhiyerenzheng"
@@ -156,7 +155,7 @@
 
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/y" />
+        />    android:src="@drawable/y" />
     </LinearLayout>
     <LinearLayout
         android:id="@+id/myorder"
@@ -180,7 +179,7 @@
 
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/y" />
+       />     android:src="@drawable/y" />
     </LinearLayout>
 
 

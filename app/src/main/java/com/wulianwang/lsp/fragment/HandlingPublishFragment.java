@@ -1,4 +1,4 @@
-package com.wulianwang.lsp.activity;
+package com.wulianwang.lsp.fragment;
 
 import android.app.Fragment;
 import android.content.Context;

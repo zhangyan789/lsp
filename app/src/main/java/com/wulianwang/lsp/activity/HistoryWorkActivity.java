@@ -27,7 +27,7 @@ public class HistoryWorkActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_finish_person);
+        setContentView(R.layout.activity_history_work);
         elect = findViewById(R.id.elect);
         back = findViewById(R.id.back);
 

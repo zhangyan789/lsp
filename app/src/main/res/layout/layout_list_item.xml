@@ -54,7 +54,7 @@
         android:layout_gravity="right"
         android:padding="10dp"
         android:scaleType="fitXY"
-        android:src="@drawable/arrow_right"
+      />  android:src="@drawable/arrow_right"
 
         />
     </LinearLayout>

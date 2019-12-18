@@ -2,7 +2,6 @@ package com.wulianwang.lsp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -25,7 +24,7 @@ public class PersonalServiceDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_app);
+        setContentView(R.layout.activity_personalService_detail);
         myTextView = (TextView)this.findViewById(R.id.textView2);
         et1 = (EditText)this.findViewById(R.id.editText);
         bt1=(Button) this.findViewById(R.id.button2);

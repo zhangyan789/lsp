@@ -22,7 +22,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
-import Veiw.OnClickListener;
 
 /**
  * 成员：刘海帆 范王娟
@@ -57,23 +56,18 @@ private TimePickerView dpv;
         m_day = ca.get(Calendar.DAY_OF_MONTH);
         tv2.setText(m_year + ":" + (m_month + 1) + ":" + m_day);
         //设置日期监听
- ib2.setOnClickListener(new OnClickListener(){
-     @Override
-     public void OnClick(View v) {
-       dpv.show();
-     }
-
-     @Override
-     public void onClick(View view) {
-
-     }
- });
+         ib2.setOnClickListener(new View.OnClickListener(){
+             @Override
+             public void onClick(View view) {
+                 dpv.show();
+             }
+         });
         Calendar selectedDate = Calendar.getInstance();
         Calendar startDate = Calendar.getInstance();
         startDate.set(2013, 0, 23);
         Calendar endDate = Calendar.getInstance();
         endDate.set(2029, 11, 28);
-        dpv = new TimePickerView.Builder(this, new TimePickerView.OnTimeSelectListener() {
+        /*dpv = new TimePickerView.Builder(this, new TimePickerView.OnTimeSelectListener() {
 
             @Override
             public void onTimeSelect(Date date, View v) {//选中事件回调
@@ -90,20 +84,13 @@ private TimePickerView dpv;
                 .setDate(selectedDate)
                 .setRangDate(startDate, endDate)
                 .setDecorView(null)
-                .build();
+                .build();*/
 
 
 
-
-    }
-    private String getTimes() {//可根据需要自行截取数据显示
-        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
-        Date date = null;
-        return format.format(date);
-    }
         //设置RadioButton的监听
         rg.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-        public void onCheckedChanged(RadioGroup radioGroup, int i) {
+            public void onCheckedChanged(RadioGroup radioGroup, int i) {
                 FragmentManager fm =getFragmentManager();
                 FragmentTransaction ft1 =fm.beginTransaction();
                 frgament1 = new TestFragment();
@@ -121,7 +108,15 @@ private TimePickerView dpv;
             }
         });//(页面跳转)返回键链接赵江浩5.11任务页
 
+
     }
+
+    private String getTimes() {//可根据需要自行截取数据显示
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = null;
+        return format.format(date);
+    }
+
 
     private int getTimes(Date date) {
         return 0;
@@ -139,8 +134,8 @@ private TimePickerView dpv;
                 super();
             }
 
-            public javax.swing.AbstractButton setType(boolean[] booleans) {
-            }
+            /*public javax.swing.AbstractButton setType(boolean[] booleans) {
+            }*/
         }
 
         public abstract static class OnTimeSelectListener {

@@ -33,7 +33,7 @@ import java.util.Map;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class JdClzFragment extends Fragment {
+public class FragmentTab4 extends Fragment {
 
     List<Map<String, String>> list = new ArrayList<>();
 
@@ -41,12 +41,12 @@ public class JdClzFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view;
-        view = inflater.inflate(R.layout.fragment_jd_clz, container, false);
-        ListView listView = view.findViewById(R.id.listview);
+        view = inflater.inflate(R.layout.fragment_tab_4, container, false);
+        ListView listView = view.findViewById(R.id.lv);
 
         getData();
 
-        NewAdapter adapter = new NewAdapter(getActivity(), R.layout.jd_clz_item, list);
+        NewAdapter adapter = new NewAdapter(getActivity(), R.layout.jd_ywc_item, list);
         listView.setAdapter(adapter);
 
         return view;

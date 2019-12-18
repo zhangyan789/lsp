@@ -18,6 +18,10 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import com.wulianwang.lsp.R;
+import com.wulianwang.lsp.adapter.AnimalAdapter;
+import com.wulianwang.lsp.bean.Animal;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -29,7 +33,7 @@ import java.util.List;
  */
 
 
-public class BlankFragment extends Fragment  implements AdapterView.OnItemClickListener {
+public class FragmentTab1 extends Fragment  implements AdapterView.OnItemClickListener {
 
     private List<Animal> mData = null;
     private Context mContext;
@@ -47,7 +51,7 @@ public class BlankFragment extends Fragment  implements AdapterView.OnItemClickL
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_blank, container, false);
+        View view = inflater.inflate(R.layout.fragment_tab_1, container, false);
         return view;
     }
 
