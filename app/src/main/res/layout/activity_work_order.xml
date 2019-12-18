@@ -57,7 +57,7 @@
             android:id="@+id/i1"
             android:layout_width="20dp"
             android:layout_height="match_parent"
-            android:src="@drawable/next" />
+          />  android:src="@drawable/next" />
 
 
     </LinearLayout>
