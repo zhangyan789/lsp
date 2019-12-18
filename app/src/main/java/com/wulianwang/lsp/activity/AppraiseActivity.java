@@ -13,7 +13,11 @@ import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
 
-public class EvenActivity extends AppCompatActivity {
+/**
+ * 5.14.2 赵田田 石亚宁
+ */
+
+public class AppraiseActivity extends AppCompatActivity {
     private ImageButton button1;
     private Button button2;
     private TextView xq,mc,sj,nr,dd,pj;
@@ -24,7 +28,7 @@ public class EvenActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_even);
+        setContentView(R.layout.activity_appraise);
         button1 =(ImageButton)findViewById(R.id.button1);
         button2=(Button)findViewById(R.id.button2);
         xq=(TextView)findViewById(R.id.xq);

@@ -7,7 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -20,7 +19,10 @@ import android.widget.ArrayAdapter;
 
 import com.wulianwang.lsp.R;
 
-public class Test extends AppCompatActivity {
+/**
+ * 5.9 赵哲 胡博文
+ */
+public class CompanyPublishActivity extends AppCompatActivity {
     private ListPopupWindow listPopupWindow = null;
     private EditText myEditText;
     private Spinner mySpinner;
@@ -34,7 +36,7 @@ public class Test extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_test);
+        setContentView(R.layout.activity_company_publish);
 
         String[] ctype = new String[]{"项目1", "项目2", "项目3", "项目4"};
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,android.R.layout.simple_spinner_item,ctype);
@@ -47,8 +49,8 @@ public class Test extends AppCompatActivity {
         mBT.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Test.this,Test2.class);
-                startActivity(intent);
+           //     Intent intent= new Intent(CompanyPublishActivity.this,Test2.class);
+          //      startActivity(intent);
             }
         });
 
@@ -56,8 +58,8 @@ public class Test extends AppCompatActivity {
         mBt2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent= new Intent(Test.this,Test2.class);
-                startActivity(intent);
+          //      Intent intent= new Intent(CompanyPublishActivity.this,Test2.class);
+          //      startActivity(intent);
             }
         });
 
@@ -67,8 +69,8 @@ public class Test extends AppCompatActivity {
          mBtnTextView.setOnClickListener(new View.OnClickListener() {
           @Override
          public void onClick(View v) {
-            Intent intent= new Intent(Test.this,Test2.class);
-          startActivity(intent);
+        //    Intent intent= new Intent(CompanyPublishActivity.this,Test2.class);
+       //   startActivity(intent);
          }
          });
     }

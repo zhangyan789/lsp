@@ -1,4 +1,4 @@
-package com.wulianwang.lsp.activity;
+package com.wulianwang.lsp.adapter;
 
 
 
@@ -12,6 +12,9 @@ import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
 
+/**
+ * 刘长恩 曹彬 3.5
+ */
 public class MyListAdapter extends BaseAdapter {
     private Context mContext;
     private LayoutInflater mLayoutInflater;

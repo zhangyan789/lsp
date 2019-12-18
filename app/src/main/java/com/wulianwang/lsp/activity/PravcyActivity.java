@@ -11,6 +11,9 @@ import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
 
+/**
+ * 卫星卓 李消飞 1.6
+ */
 public class PravcyActivity extends AppCompatActivity {
 private ImageButton bt1;
 private TextView tv9;
@@ -18,7 +21,7 @@ private TextView tv9;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_Pravcy);
+        setContentView(R.layout.activity_pravcy);
 
         tv9 = (TextView)findViewById(R.id.textView2) ;
         tv9.setMovementMethod(ScrollingMovementMethod.getInstance());
@@ -39,7 +42,7 @@ private TextView tv9;
 }
 
 
-//setContentView(R.layout.activity_Pravcy);
+//setContentView(R.activity_company_certificate.activity_pravcy);
 //SpannableString str = new SpannableString("我已阅读并同意《隐私协议》及《服务政策》");
 //str.setSpan(new PravcyActivity(this),7,13, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);
 //str.setSpan(new PravcyActivity(this),7,13,Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);

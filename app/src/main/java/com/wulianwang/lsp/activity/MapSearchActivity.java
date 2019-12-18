@@ -11,14 +11,17 @@ import com.amap.api.maps.model.Marker;
 import com.amap.api.maps.model.MarkerOptions;
 import com.wulianwang.lsp.R;
 
-public class MapActivity extends AppCompatActivity {
+/**
+ * 5.8 刘忠凯 闫亚东
+ */
+public class MapSearchActivity extends AppCompatActivity {
 
     MapView mMapView = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_map);
+        setContentView(R.layout.activity_map_search);
 
         mMapView = (MapView) findViewById(R.id.map);
         //在activity执行onCreate时执行mMapView.onCreate(savedInstanceState)，创建地图

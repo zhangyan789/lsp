@@ -18,7 +18,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.GerenrenZheng"></activity>
+        <activity android:name=".activity.PersonalCertificateActivity"></activity>
         <!-- debug高德地图 -->
         <meta-data
             android:name="com.amap.api.v2.apikey"

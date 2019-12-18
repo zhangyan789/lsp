@@ -11,12 +11,15 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.wulianwang.lsp.R;
 
-public class renyuanxiangqi extends AppCompatActivity {
+/**
+ * 4.2 人员详情 王艺江 皂辉杰
+ */
+public class PersonDetailActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_renyuanxiangqi);
+        setContentView(R.layout.activity_person_detail);
         TextView resume = (TextView)this.findViewById(R.id.resume);
         TextView work = (TextView)this.findViewById(R.id.work);
         TextView location = (TextView)this.findViewById(R.id.location);

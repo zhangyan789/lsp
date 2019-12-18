@@ -23,8 +23,10 @@ import java.io.File;
 import java.io.IOException;
 import java.io.FileNotFoundException;
 
-
-public class GerenrenZheng extends AppCompatActivity {
+/**
+ * 许浒 李鹏 5.3
+ */
+public class PersonalCertificateActivity extends AppCompatActivity {
     static final int TAKE_PHOTO=1;
     ImageView  picture;
     Uri imageUri1,imageUri2,imageUri3;
@@ -33,7 +35,7 @@ public class GerenrenZheng extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_personal_certificate);
 
 
 
@@ -65,7 +67,7 @@ public class GerenrenZheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri1 = FileProvider.getUriForFile(GerenrenZheng.this,
+                {    imageUri1 = FileProvider.getUriForFile(PersonalCertificateActivity.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{
@@ -95,7 +97,7 @@ public class GerenrenZheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri2= FileProvider.getUriForFile(GerenrenZheng.this,
+                {    imageUri2= FileProvider.getUriForFile(PersonalCertificateActivity.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{
@@ -124,7 +126,7 @@ public class GerenrenZheng extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 if (Build.VERSION.SDK_INT >= 24)
-                {    imageUri3 = FileProvider.getUriForFile(GerenrenZheng.this,
+                {    imageUri3 = FileProvider.getUriForFile(PersonalCertificateActivity.this,
                         "com.example.cameraalbumtest.fileprovider", outputImage);
                 }
                 else{

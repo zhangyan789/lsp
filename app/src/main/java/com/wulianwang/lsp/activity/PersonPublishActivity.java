@@ -3,8 +3,6 @@ package com.wulianwang.lsp.activity;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
-import android.app.DatePickerDialog;
-import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -20,7 +18,10 @@ import android.widget.ArrayAdapter;
 
 import com.wulianwang.lsp.R;
 
-public class Main2Activity extends AppCompatActivity {
+/**
+ * 王城 王光彪 5.7
+ */
+public class PersonPublishActivity extends AppCompatActivity {
     private ListPopupWindow listPopupWindow = null;
     private ImageView arrowImageView;
     private TextView chooseText;
@@ -31,7 +32,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_person_publish);
         btn2=(Button)findViewById(R.id.buttonoo2);
         //btn3=(Button)findViewById(R.id.button003);
         btn4=(Button)findViewById(R.id.button04);
@@ -39,9 +40,9 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // activity页面跳转
-                Intent intent= new Intent(Main2Activity.this,Main3Activity.class);
+          //      Intent intent= new Intent(PersonPublishActivity.this,Main3Activity.class);
 
-                startActivity(intent);
+          //      startActivity(intent);
             }
         });
         BtnTextView =findViewById(R.id.button01);
@@ -49,9 +50,9 @@ public class Main2Activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 // activity页面跳转
-                Intent intent= new Intent(Main2Activity.this,Main3Activity.class);
+            //    Intent intent= new Intent(PersonPublishActivity.this,Main3Activity.class);
 
-                startActivity(intent);
+           //     startActivity(intent);
             }
         });
         txt1=(TextView)findViewById(R            .id.text001);
@@ -84,7 +85,7 @@ public class Main2Activity extends AppCompatActivity {
                         txt1.setText("您设置的日期为："+m_year+"年"+m_month+"月"+m_day+"日");
                     }
                 };
-                DatePickerDialog date=new DatePickerDialog(Main2Activity.this,dateListener,m_year,m_month,m_day);
+                DatePickerDialog date=new DatePickerDialog(PersonPublishActivity.this,dateListener,m_year,m_month,m_day);
                 date.setTitle("日期对话框");
                 date.show();
 

@@ -22,7 +22,10 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class PeopleActivity extends AppCompatActivity {
+/**
+ * 魏行 梅克成 4.1
+ */
+public class PeopleListActivity extends AppCompatActivity {
     String[] StringArray=new String[]{"岗位","昵称"};
     String[] data=new String[]{"张三","李四","王五"};
     Spinner sp;
@@ -37,12 +40,12 @@ public class PeopleActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_people);
+        setContentView(R.layout.activity_people_list);
         sp = (Spinner)findViewById(R.id.spinner);
         //sp.setOnItemClickListener(this);
-        //ArrayAdapter<String> ada=new ArrayAdapter<String>(this,R.layout,StringArray);
-        //ArrayAdapter<String> aa = new ArrayAdapter<String>(this,android.R.layout)
-        ArrayAdapter<String> ada=new ArrayAdapter<String>(PeopleActivity.this,android.R.layout.simple_list_item_1,StringArray);
+        //ArrayAdapter<String> ada=new ArrayAdapter<String>(this,R.activity_company_certificate,StringArray);
+        //ArrayAdapter<String> aa = new ArrayAdapter<String>(this,android.R.activity_company_certificate)
+        ArrayAdapter<String> ada=new ArrayAdapter<String>(PeopleListActivity.this,android.R.layout.simple_list_item_1,StringArray);
         sp.setAdapter(ada);
 
         initData();
@@ -68,7 +71,7 @@ public class PeopleActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(linearLayoutManager);
 
         list = initDta;
-        adapter = new MyListAdapter(list, R.layout.people_item);
+        adapter = new MyListAdapter(list, R.layout.person_item);
         recyclerView.setAdapter(adapter);
 
     }

@@ -25,9 +25,9 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * A simple {@link Fragment} subclass.
+ * 韩海涛 艾兴港 5.16.2
  */
-public class JdYwcFragment extends Fragment {
+public class OrderCompleteFragment extends Fragment {
 
     List<Map<String, String>> list = new ArrayList<>();
 
@@ -35,7 +35,7 @@ public class JdYwcFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view;
-        view = inflater.inflate(R.layout.fragment_jd_ywc, container, false);
+        view = inflater.inflate(R.layout.fragment_order_complete, container, false);
         ListView listView = view.findViewById(R.id.listview);
 
         getData();

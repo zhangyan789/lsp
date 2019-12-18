@@ -16,7 +16,10 @@ import android.widget.TextView;
 
 import com.wulianwang.lsp.R;
 
-public class zcyyg extends AppCompatActivity {
+/**
+ * 张春雨 杨光 3.6
+ */
+public class CompanyServiceDetailActivity extends AppCompatActivity {
     private TextView myTextView;
     private Button mybutton,bt2;
     private EditText et1,et2,et11,et12,et13;
@@ -28,7 +31,7 @@ public class zcyyg extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_zcyyg);
+        setContentView(R.layout.activity_company_service_detail);
         myTextView = (TextView)this.findViewById(R.id.textView);
         et1 = (EditText)this.findViewById(R.id.editText);
         mybutton = (Button)this.findViewById(R.id.button);
@@ -63,7 +66,7 @@ public class zcyyg extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i=new Intent();
-               // i.setClass(zcyyg.this,
+               // i.setClass(CompanyServiceDetailActivity.this,
                // );
                 startActivity(i);
 
