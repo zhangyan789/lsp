@@ -18,7 +18,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".activity.ElectricityServiceActivity"></activity>
+        <activity android:name=".activity.AllServiceActivity"></activity>
+        <activity android:name=".activity.ElectricityServiceActivity" />
         <activity android:name=".activity.ProfessionalCertificationActivity" />
         <activity android:name=".activity.MyInfoActivity" />
         <activity android:name=".activity.MyOrderActivity" />

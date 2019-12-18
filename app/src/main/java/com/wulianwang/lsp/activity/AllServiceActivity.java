@@ -2,6 +2,7 @@ package com.wulianwang.lsp.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.RelativeLayout;
@@ -22,13 +23,15 @@ public class AllServiceActivity extends AppCompatActivity {
         tv1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(AllServiceActivity.this, PersonalServiceActivity.class);
+                startActivity(intent);
             }
         });
         tv2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(AllServiceActivity.this, CompanyServiceActivity.class);
+                startActivity(intent);
             }
         });
     }

@@ -1,7 +1,11 @@
 package com.wulianwang.lsp.activity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -16,9 +20,7 @@ import java.util.List;
  */
 public class PersonalServiceActivity extends AppCompatActivity {
     private ListView list_animal;
-    private List<Itemview> Itemalls;
-
-
+    private List<Itemview> itemalls;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,12 +29,27 @@ public class PersonalServiceActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
+        Itemview itemview = new Itemview("time", "name", "content");
+        itemalls.add(itemview);
 
+        list_animal = findViewById(R.id.listview);
 
+        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, itemalls);
 
+        list_animal.setAdapter(adapter);
 
+        list_animal.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                Intent intent = new Intent(PersonalServiceActivity.this, PersonalServiceDetailActivity.class);
+                startActivity(intent);
+            }
 
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
     }
 
 

@@ -33,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
         im2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, AllServiceActivity.class);
+                startActivity(intent);
             }
         });
         //人员列表

@@ -45,14 +45,14 @@ public class PersonalServiceDetailActivity extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     //点击事件
-                    Intent i=new Intent(PersonalServiceDetailActivity.this,PPAP.class);
-                    startActivity(i);
+            //        Intent i=new Intent(PersonalServiceDetailActivity.this,PPAP.class);
+           //         startActivity(i);
 
      bt2.setOnClickListener(new View.OnClickListener() {
          @Override
          public void onClick(View v) {
-             Intent x=new Intent(PersonalServiceDetailActivity.this,PPP.class);
-             startActivity(x);
+        //     Intent x=new Intent(PersonalServiceDetailActivity.this,PPP.class);
+       //      startActivity(x);
          }
      });
 
