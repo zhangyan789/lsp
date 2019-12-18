@@ -12,10 +12,6 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.wulianwang.lsp.Main3Activity;
-import com.wulianwang.lsp.Main4Activity;
-import com.wulianwang.lsp.Main5Activity;
-import com.wulianwang.lsp.Main6Activity;
 import com.wulianwang.lsp.R;
 
 /**
@@ -27,14 +23,10 @@ public class RegisterActivity extends AppCompatActivity {
 
     private CheckBox checkBox = null;
 
-    //public MainActivity(Button button1) {
-    //   this.button1 = button1;
-    // }
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main22);
+        setContentView(R.layout.activity_register);
 
 
 
@@ -44,8 +36,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Main3Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-                startActivity(intent);
+             //   intent.setClass(MainActivity.this, Main3Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+            //    startActivity(intent);
 
 
             }
@@ -58,8 +50,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, ForgetPasswordActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-                startActivity(intent);
+       //         intent.setClass(MainActivity.this, ForgetPasswordActivity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+      //          startActivity(intent);
             }
         });
 
@@ -67,9 +59,9 @@ public class RegisterActivity extends AppCompatActivity {
         bt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Main4Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-                startActivity(intent);
+        //        Intent intent = new Intent();
+        //        intent.setClass(MainActivity.this, Main4Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+       //         startActivity(intent);
             }
         });
         bt = (Button) findViewById(R.id.button9);//id后面为上方button的id
@@ -77,8 +69,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Main5Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-                startActivity(intent);
+        //        intent.setClass(MainActivity.this, Main5Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+        //        startActivity(intent);
             }
         });
 
@@ -87,8 +79,8 @@ public class RegisterActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(MainActivity.this, Main6Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
-                startActivity(intent);
+        //        intent.setClass(MainActivity.this, Main6Activity.class);//this前面为当前activty名称，class前面为要跳转到得activity名称
+       //         startActivity(intent);
             }
         });
 

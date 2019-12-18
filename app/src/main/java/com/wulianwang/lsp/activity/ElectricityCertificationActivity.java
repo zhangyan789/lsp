@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.Looper;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -12,7 +13,11 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.bumptech.glide.Glide;
 import com.wulianwang.lsp.R;
+import com.wulianwang.lsp.util.PhotoUtils;
+
+import java.io.IOException;
 
 import okhttp3.Call;
 import okhttp3.Callback;
@@ -65,14 +70,14 @@ public class ElectricityCertificationActivity extends AppCompatActivity implemen
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-       // super.onActivityResult(requestCode, resultCode, data);
+        super.onActivityResult(requestCode, resultCode, data);
         switch (requestCode) {
             // 表示 调用照相机拍照
             case PICK:
                 if (resultCode == RESULT_OK) {
                     Bundle bundle = data.getExtras();
                     Bitmap bitmap = (Bitmap) bundle.get("data");
-                    imgString = bitmapToBase64(bitmap);
+              //      imgString = bitmapToBase64(bitmap);
                     uploadImg();
                 }
                 break;
@@ -80,8 +85,8 @@ public class ElectricityCertificationActivity extends AppCompatActivity implemen
             case IMAGE_RESULT_CODE:
                 if (resultCode == RESULT_OK) {
                     Uri uri = data.getData();
-                    Bitmap bitmap2 = PhotoUtils.getBitmapFromUri(uri,);
-                    imgString = bitmapToBase64(bitmap2);
+                    Bitmap bitmap2 = PhotoUtils.getBitmapFromUri(uri, this);
+               //     imgString = bitmapToBase64(bitmap2);
                     uploadImg();
                 }
                 break;
@@ -89,7 +94,7 @@ public class ElectricityCertificationActivity extends AppCompatActivity implemen
     }
     //上传图片文件的操作
     public void uploadImg() {
-        okHttpClient okHttpClient = new OkHttpClient.Builder().build();
+        OkHttpClient okHttpClient = new OkHttpClient.Builder().build();
         //上传图片参数需要与服务端沟通，我就不多做解释了，我添加的都是我们服务端需要的
         //你们根据情况自行更改
         //另外网络请求我就不多做解释了
@@ -107,15 +112,15 @@ public class ElectricityCertificationActivity extends AppCompatActivity implemen
             @Override
             public void onResponse(Call call, Response response) throws IOException {
                 final String data = response.body().string();
-                Gson gson = new Gson();
-                final Beans bean = gson.fromJson(data, Beans.class);
-                Log.d(TAG, "onResponse: " + data);
+           //     Gson gson = new Gson();
+          //      final Beans bean = gson.fromJson(data, Beans.class);
+          //      Log.d(TAG, "onResponse: " + data);
                 mHandler.post(new Runnable() {
                     @Override
                     public void run() {
                         //加载图片用的Gilde框架，也可以自己自由选择，
                         //""里面取决于服务端的返回值是否需要自行添加地址
-                        Glide.with(MainActivity.this).load("" + bean.getData().getUrl()).into(headIv);
+                     //   Glide.with(getApplicationContext()).load("" + bean.getData().getUrl()).into(headIv);
                     }
                 });
             }

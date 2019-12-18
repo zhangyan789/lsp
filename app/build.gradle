@@ -21,7 +21,7 @@ android {
     defaultConfig {
         ndk {
             //设置支持的SO库架构（开发者可以根据需要，选择一个或多个平台的so）
-            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86","x86_64"
+            abiFilters "armeabi", "armeabi-v7a", "arm64-v8a", "x86", "x86_64"
         }
     }
 
@@ -57,4 +57,7 @@ dependencies {
 
     implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //上拉更多，下拉刷新
     implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'  //没有使用特殊Header，可以不加这行
+
+    implementation 'com.contrarywind:Android-PickerView:3.2.7'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }
