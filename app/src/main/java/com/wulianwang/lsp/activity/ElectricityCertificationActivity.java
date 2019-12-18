@@ -125,4 +125,4 @@ public class ElectricityCertificationActivity extends AppCompatActivity implemen
                 });
             }
         });
-    }}}}
+    }}

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MyReleaseActivity">
+
+    <!--刘海帆、范王娟-->
+    <!--我的发布、3个fragment-->
+
+    <!-- TODO: Update blank Linear layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="53dp">
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:background="#20B2AA"
+            android:layout_gravity="left"
+            android:src="?attr/homeAsUpIndicator" />
+
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="fill_parent"
+            android:layout_height="53dp"
+            android:textSize="20dp"
+            android:background="#20B2AA"
+            android:gravity="center"
+            android:text="我的发布" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <TextView
+            android:id="@+id/textview2"
+            android:gravity="left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/riqi"
+            android:layout_weight="7"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+            <LinearLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="10">
+                <RadioGroup
+                    android:id="@+id/RG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+                <RadioButton
+                    android:id="@+id/radiobutton1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="未接"
+                    android:textSize="15dp"/>
+                <RadioButton
+                    android:id="@+id/radiobutton2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="#ffffff"
+                    android:text="处理中"
+                    android:textSize="15dp"/>
+                <RadioButton
+                    android:id="@+id/radiobutton3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="#ffffff"
+                    android:layout_weight="1"
+                    android:text="已完成"
+                    android:textSize="15dp"/>
+                </RadioGroup>
+            </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
