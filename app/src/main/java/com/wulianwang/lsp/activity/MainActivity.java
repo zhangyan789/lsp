@@ -24,7 +24,8 @@ public class MainActivity extends AppCompatActivity {
         im1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(MainActivity.this, ElectricityServiceActivity.class);
+                startActivity(intent);
             }
         });
         //任务广场

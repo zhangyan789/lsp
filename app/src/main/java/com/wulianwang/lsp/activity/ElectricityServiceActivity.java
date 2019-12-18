@@ -22,7 +22,7 @@ public class ElectricityServiceActivity extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-            //    Intent intent =new Intent();
+
                 finish();
             }
         });
