@@ -13,7 +13,9 @@ import androidx.annotation.Nullable;
 import java.util.LinkedList;
 import java.util.List;
 
-
+/**
+ * 李珍珍 康子露 5.12.2
+ */
 public class HandlingPublishFragment extends Fragment {
     private  Context mcontext ;
     private ListView list;
