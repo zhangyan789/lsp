@@ -16,7 +16,6 @@ import com.wulianwang.lsp.R;
 
 /**
  * 5.13 未接任务详情 张妍妍 张玉
- * 刚添加了接单的功能  但是可能还需要再进行修改
  */
 public class TaskDetailActivity extends AppCompatActivity {
 
@@ -68,14 +67,15 @@ public class TaskDetailActivity extends AppCompatActivity {
             bt1.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
+                }
+            });
 
           }else{
             bt1.setVisibility(View.GONE);
             back.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                        }
-                    });
+
 
                 }
             });
@@ -87,48 +87,4 @@ public class TaskDetailActivity extends AppCompatActivity {
                 finish();
             }
         });}
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    }
-
-    private class LoginActivity {
-    }
 }
